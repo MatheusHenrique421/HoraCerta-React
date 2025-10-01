@@ -9,8 +9,8 @@ const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             { index: true, element: <Navigate to="/home" /> }, // Redireciona de "/" para "/Home"
-            { path: "Home", element: <Home /> },
-            { path: "Sobre", element: <Sobre /> },
+            { path: "home", element: <Home /> },
+            { path: "sobre", element: <Sobre /> },
         ],
     },
 ]);
