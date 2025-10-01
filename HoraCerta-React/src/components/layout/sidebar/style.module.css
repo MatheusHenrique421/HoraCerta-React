@@ -1,0 +1,176 @@
+/* Base da sidebar */
+.sidebar {
+  background: #eee;
+  height: 100vh;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+/* Botão toggle */
+.toggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+  background: gray;
+  border-radius: 8px;
+}
+
+/* Lista da sidebar */
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Links */
+.sidebarList a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Quando fechada → ícones centralizados */
+.closedList {
+  align-items: center;
+}
+
+/* Responsividade */
+
+/* Telas pequenas: sidebar vira barra inferior */
+@media (max-width: 768px) {
+
+  /* Base da sidebar */
+  .sidebar {
+    background: #eee;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.open {
+    width: 200px;
+  }
+
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  /* Botão toggle */
+  .toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: gray;
+    border-radius: 8px;
+  }
+
+  /* Lista da sidebar */
+  .sidebarList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Links */
+  .sidebarList a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Quando fechada → ícones centralizados */
+  .closedList {
+    align-items: center;
+  }
+
+}
+
+/* Monitores grandes: sidebar mais larga */
+@media (min-width: 1200px) {
+
+  /* Base da sidebar */
+  .sidebar {
+    background: #eee;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.open {
+    width: 200px;
+  }
+
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  /* Botão toggle */
+  .toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: gray;
+    border-radius: 8px;
+  }
+
+  /* Lista da sidebar */
+  .sidebarList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Links */
+  .sidebarList a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Quando fechada → ícones centralizados */
+  .closedList {
+    align-items: center;
+  }
+
+}
