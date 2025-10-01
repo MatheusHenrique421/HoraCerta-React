@@ -1,6 +1,7 @@
 import { IconArrowBigLeftLine, IconArrowBigRightLine, IconHome, IconInfoCircle } from "@tabler/icons-react";
 import { useState } from "react";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
     const [open, setOpen] = useState(false);
@@ -16,14 +17,15 @@ export default function Sidebar() {
                 <nav>
                     <ul className={`${styles.sidebarList} ${styles.closedList}`}>
                         <li>
-                            <a href="/home">
+                            <Link to="/home">
                                 <IconHome size={20} />
-                            </a>
+                            </Link>
+
                         </li>
                         <li>
-                            <a href="/sobre">
+                            <Link to="/sobre">
                                 <IconInfoCircle size={20} />
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -34,14 +36,14 @@ export default function Sidebar() {
                 <nav>
                     <ul className={`${styles.sidebarList} ${styles.openList}`}>
                         <li>
-                            <a href="/home">
+                            <Link to="/home">
                                 <IconHome size={20} /> Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/sobre">
+                            <Link to="/sobre">
                                 <IconInfoCircle size={20} /> Sobre
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
